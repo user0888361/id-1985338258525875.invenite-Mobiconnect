@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ホーム</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #615d5d;
+      color: #fff;
+      padding: 1px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0078d7;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+   background-color: #005a9e;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0 0 15px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Mobiconnect</h1>
+  </header>
+ようこそ。中俣直子さん
+  <main>
+    <p>最終操作：<span id="text"></span></p>
+    <hr>
+
+    <div class="button-group">
+      <button onclick="location.href='ホーム.html'">ホーム</button>
+      <button onclick="location.href='device.html'">端末一覧</button>
+      <button onclick="location.href='no.html'">ジョブ管理</button>
+      <button onclick="location.href='no.html'">端末制御メニュー</button>
+      <button onclick="location.href='no.html'">dep</button>
+      <button onclick="location.href='no.html'">アプリ配信</button>
+      <button onclick="location.href='no.html'">ファイル配信</button>
+      <button onclick="location.href='account.html'">アカウント設定</button>
+    </div>
+
+    <h2>端末のアクシデント</h2>
+    <p>端末のアクシデントはありません</p>
+    <hr>
+
+    <h2>端末の違反</h2>
+    <p>端末の違反はありません</p>
+  </main>
+
+  <footer>
+    &copy; 2025 invenite®Mobiconnect
+  </footer>
+
+  <script type="text/javascript">
+    document.getElementById("text").innerHTML = showTime();
+
+    function showTime() {
+      var now = new Date();
+      var nowhour = now.getHours();
+      var nowminutes = now.getMinutes();
+      var nowseconds = now.getSeconds();
+
+      var text = nowhour + "：" + nowminutes + "：" + nowseconds;
+
+      return text;
+    }
+  </script>
+</body>
+
+</html>

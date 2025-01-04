@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>端末一覧</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f9fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 20px 0;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: #0078d7;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 80%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    button:hover {
+      background-color: #005a9e;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h2>端末一覧</h2>
+  </header>
+
+  <main>
+    <h4>管理中の端末 1 台</h4>
+    <hr>
+    <img src="images.jpeg" alt="端末イメージ" width="80" height="80">
+    <p>中俣博幸さん</p>
+    <p>Android</p>
+    <hr>
+    <div class="button-group">
+      <button onclick="location.href='no.html'">端末情報</button>
+      <button onclick="location.href='no.html'">グループ管理</button>
+      <button onclick="location.href='no.html'">アカウント設定</button>
+      <button onclick="location.href='no.html'">端末監視状況</button>
+      <button onclick="window.location.href='https://maps.app.goo.gl/HbbjkAsRdNnZ2hsd9'">端末追跡</button>
+    </div>
+  </main>
+</body>
+
+</html>
